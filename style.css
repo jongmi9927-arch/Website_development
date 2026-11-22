@@ -1,0 +1,462 @@
+body {
+    background-color: rgb(254, 249, 251);
+    font-size: 1rem;
+}
+h1 {
+  font-size: 70px;
+  font-family: "Playfair Display", serif;
+  padding-left: 100px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#desktopMenu {
+    margin-top: 0;
+}
+#desktopMenu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0px 35px;
+    margin-right: 70px;
+    gap: 35px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    height:auto;
+    width: 90%;
+}
+#home {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Cinzel", serif;
+  }
+#home h3 {
+    margin-bottom: 5px;
+}
+#home p{
+    font-size: 15px;
+    margin-top: 5px;
+}  
+#journey {
+    text-align: center;
+    margin-top: 40px;
+}  
+#journey ul {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 30px 250px 0;
+    gap: 30px;
+}
+.items {
+    color: rgb(197, 153, 161);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.items img{
+    width: 130px;
+    height: 130px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.items span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#story{
+    text-align:left;
+    margin-right:0;
+    margin-top: 40px;
+    background-color: #fce4ec;
+    padding: 40px 100px;
+}
+.story-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    }
+.story-text{
+    flex: 1;
+    text-align: left;
+}
+.story-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.story-image img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+#mission{
+    text-align: left;
+    margin-right: 0;
+    margin-top: 20px;
+    padding: 40px 100px;
+    background-color: #f0d2dd;
+}
+.mission-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.mission-text{
+    flex: 1;
+    text-align: left;
+}
+.mission-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.mission-image img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10px;
+}
+#touch{
+    text-align: right;
+    margin-right:100px;
+    margin-top: 40px;
+    position: relative;
+    }
+#story p, #touch p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}    
+#story h3, #mission h3, #touch h3{
+    margin-bottom: 10px;
+}
+#story p, #mission p, #touch p{
+    margin-top: 5px;
+    font-size: 1rem;
+}
+footer{
+    position: relative;
+    text-align: center;
+    font-size: 11px;
+    color: rgb(145, 134, 134);
+    padding: 8px 10px;
+    margin-top: 25px;
+    border-top: 1px solid rgb(161, 131, 131);
+    overflow: hidden;
+}
+@media (max-width: 599px){
+    h1{
+        font-size: 40px;
+    } 
+    #journey ul{
+        flex-wrap: wrap;
+    }  
+    .story-container, .mission-container{
+        flex-direction: column;
+    }   
+}
+@media (min-width: 600px) and (max-width: 900px){
+    #journey ul{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+}
+#skills {
+    text-align: center;
+    margin-top: 40px;
+    padding: 50px 20px;
+    background-color: #f7e8ee;
+}
+#skills h3 { 
+    margin-bottom: 5px; 
+    color: #4a3b40;
+}
+#skills > p { 
+    margin-top: 5px; 
+    margin-bottom: 35px; 
+    color: #7d6b70; 
+    font-size: 1rem; 
+}
+.tech {
+    display: grid;
+    grid-template-columns: 60px 380px 380px 60px ;
+    gap: 20px 30px;
+    max-width: fit-content;
+    margin: 0 auto;
+    justify-items: center;
+}
+.html{
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+.css{
+    grid-column: 3 / 4;
+    justify-self: start;
+}
+.JavaScript{
+    grid-column: 1 /2;
+    justify-self: start;
+}    
+.linux{
+    grid-column: 4 /5;
+    justify-self: end;
+}
+.sql {
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+.JAVA{
+    grid-column: 3 /4;
+    justify-self: start;
+}
+.html, .css, .JavaScript, .linux, .sql, .JAVA {
+    box-sizing: border-box;
+    background-color: #f3eef7;
+    border: 1px solid rgb(228, 218, 238);
+    border-radius: 12px;
+    padding: 18px 20px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(180, 160, 200, 0.1);
+}
+.html:hover, .css:hover, .JavaScript:hover, .linux:hover, .sql:hover, .JAVA:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(180, 160, 200, 0.25);
+}
+.html img, .css img, .JavaScript img, .linux img, .sql img, .JAVA img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.html span, .css span, .JavaScript span, .linux span, .sql span, .JAVA span {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: left;
+}
+.html h4, .css h4, .JavaScript h4, .linux h4, .sql h4, .JAVA h4 {
+    font-size: 1rem;
+    color: #4a3b40;
+    margin: 0;
+}
+.html p, .css p, .JavaScript p, .linux p, .sql p, .JAVA p {
+    font-size: 1rem;
+    color: #7d6b70;
+    margin: 0;
+}
+.html, .JavaScript, .sql {
+    flex-direction: row-reverse;
+}
+.html span, .JavaScript span, .sql span{
+    text-align: right;
+}
+
+@media (max-width: 599px) {
+    .tech {
+        grid-template-columns: 1fr;
+    }
+    .html, .css, .JavaScript, .linux, .sql, .JAVA {
+        grid-column: auto;
+        justify-self: stretch;
+    }
+}
+
+#latte-art {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.latte-video-box {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.latte-video-box video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.contact-button{
+    display: inline-block;
+    font-size: 20px;
+    background-color: rgb(244,226,229);
+    padding: 6px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#hearts{
+    display: none;
+}
+.heart-pop{
+    display: none;
+}
+#hearts:checked ~ .heart-pop {
+    display: block;
+    position: absolute;
+    right: 75px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+#hearts:checked ~ .heart-pop i {
+    position: absolute;
+    font-size: 20px; 
+    color: rgb(214, 90, 122); 
+    opacity: 0;
+    animation: flower 4.5s ease-out forwards;
+}
+#hearts:checked ~ .heart-pop i.h1 { animation-delay: 0s; }
+#hearts:checked ~ .heart-pop i.h2 { animation-delay: 0.4s; }
+#hearts:checked ~ .heart-pop i.h3 { animation-delay: 0.8s; }
+#hearts:checked ~ .heart-pop i.h4 { animation-delay: 0.2s; }
+#hearts:checked ~ .heart-pop i.h5 { animation-delay: 0.6s; }
+#hearts:checked ~ .heart-pop i.h6 { animation-delay: 1.0s; }
+#hearts:checked ~ .heart-pop i.h7 { animation-delay: 0.3s; }
+#hearts:checked ~ .heart-pop i.h8 { animation-delay: 0.7s; }
+#hearts:checked ~ .heart-pop i.h9 { animation-delay: 0.5s; }
+#hearts:checked ~ .heart-pop i.h10 { animation-delay: 0.9s; }
+
+@keyframes flower {
+    0% {
+        transform: translate(0, 0) scale(0.3) rotate(0deg);
+        opacity: 0;
+    }
+        15% {
+        opacity: 0.9;
+    }
+    35% {
+        transform: translate(calc(var(--end-x) * 0.3 - 30px), calc(var(--end-y) * 0.35)) scale(0.9) rotate(-8deg);
+    }
+    60% {
+        transform: translate(calc(var(--end-x) * 0.75 + 35px), calc(var(--end-y) * 0.75)) scale(1.6) rotate(12deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(var(--end-x), var(--end-y)) scale(2.2) rotate(-15deg);
+        opacity: 0;
+    }
+}
+.heart-pop i.h1 { --end-x: -3vw; --end-y: -65vh; }
+.heart-pop i.h2 { --end-x: 5vw; --end-y: -78vh; }
+.heart-pop i.h3 { --end-x: -10vw; --end-y: -70vh; }
+.heart-pop i.h4 { --end-x: 8vw; --end-y: -85vh; }
+.heart-pop i.h5 { --end-x: -6vw; --end-y: -68vh; }
+.heart-pop i.h6 { --end-x: 2vw; --end-y: -75vh; }
+.heart-pop i.h7 { --end-x: -14vw; --end-y: -82vh; }
+.heart-pop i.h8 { --end-x: 12vw; --end-y: -72vh; }
+.heart-pop i.h9  { --end-x: -5vw;  --end-y: -90vh; }
+.heart-pop i.h10 { --end-x: 7vw;   --end-y: -62vh; }
+
+h1.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.title-logo {
+    display: inline-block;
+    width: auto;
+    height: 68px;
+    max-width: none;
+    object-fit: contain;
+    margin: 0;
+    position: relative;
+    top: 8px;
+}
+.light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent 0%, #f192bd 50%, transparent 100%);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    background-position: -30% 0;
+    pointer-events: none;
+}    
+footer:hover .light {
+    animation: flow 3s linear;
+}
+@keyframes flow {
+    0%   { background-position: -30% 0; }
+    100% { background-position: 130% 0; }
+}
+.touch-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.touch-title h3 {
+    margin-bottom: 10px;
+}
+#map-chk {
+    display: none;
+}
+.map-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: rgb(244, 226, 229);
+    cursor: pointer;
+}
+.map-img {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 10px);
+    width: 220px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+#map-chk:checked ~ .map-img {
+    animation: showMap 0.4s ease forwards;
+}
+#map-chk:not(:checked) ~ .map-img {
+    animation: hideMap 0.4s ease forwards;
+}
+@keyframes showMap {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes hideMap {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+.flip {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 12px;
+    font-size: 14px;
+    background-color: #fce4ec;
+    border: 1px solid #e6b8c7;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.flip:hover {
+    transform: rotateY(180deg);
+}
